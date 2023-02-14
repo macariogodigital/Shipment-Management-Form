@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Shipment Management Form</title>
+        <title> Shipment Management Form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -18,11 +18,11 @@
                 <h2>Shipment Management Form</h2>
             </div>    
 
-            <form id='spmtform' method='get'>
+            <form id='empform' method='get'>
                 <div class='form-group'>
-                    <label>Shipment-No</label>
-                    <input type= "number" id="spmtid" class="form-control" onchange ="getSpmt()"
-                           placeholder = "Enter Shipment-No ">
+                    <label>Shipment-No:</label>
+                    <input type='number' id="spmtno" class="form-control" onchange ="getSpmt()"
+                           placeholder = "Enter Shipment-No">
                 </div>
 
                 <div class="form-group">
@@ -33,37 +33,37 @@
 
                 <div class="form-group">
                     <label>Source</label>
-                    <input type="text" id="smptsrc" class="form-control"
+                    <input type="text" id="spmtsrc" class="form-control"
                            placeholder = "Enter Source">           
                 </div>
 
                 <div class="form-group">
                     <label>Destination</label>
-                    <input type="text" id="des" class="form-control"
+                    <input type="text" id="spmtdest" class="form-control"
                            placeholder = "Enter Destination">
                 </div>
 
                 <div class="form-group">
                     <label>Shipping-Date</label>
-                    <input type="date" id="spdt" class="form-control"
+                    <input type="date" id="spmtdt" class="form-control"
                            placeholder = "Enter Shipping-Date">
                 </div>
 
                 <div class="form-group">
                     <label>Expected-Delivery-Date</label>
-                    <input type="date" id="eddt" class="form-control"
+                    <input type="date" id="spmtedt" class="form-control"
                            placeholder = "Enter Expected-Delivery-Date">
                 </div>
 
                 <div class = "form-group text-center">
-                    <button type="button" class="btn btn-lg btn-primary" id="Save"  onclick= "SaveData()" disabled>Save</button>                
-                    <button type="button" class="btn btn-lg btn-primary" id="Update" onclick="UpdateData()" disabled>Update</button> 
-                    <button type="button" class="btn btn-lg btn-primary" id="Reset"  onclick="ResetForm()" disabled>Reset</button> 
+                    <button type="button" class="btn btn-lg btn-primary" id="save"  onclick="saveData()" disabled>Save</button>                
+                    <button type="button" class="btn btn-lg btn-primary" id="change" onclick="changeData()" disabled>Update</button> 
+                    <button type="button" class="btn btn-lg btn-primary" id="reset"  onclick="resetForm()" disabled>Reset</button> 
                 </div>   
             </form>
         </div>
 
         <script type = "text/javascript" src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
-        <script type = "text/javascript" src="js/index2.js"></script>
+        <script type = "text/javascript" src='js/myindex.js'></script>
     </body>
 </html>
